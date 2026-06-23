@@ -2,6 +2,9 @@
 .env
 .env.*
 
+# Lovable
+.lovable/
+
 # Logs
 logs
 *.log
