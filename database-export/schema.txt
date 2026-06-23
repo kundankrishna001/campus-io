@@ -1,0 +1,156 @@
+badges | id | uuid
+badges | code | text
+badges | name | text
+badges | description | text
+badges | icon | text
+badges | xp_reward | integer
+badges | created_at | timestamp with time zone
+guidance_reports | id | uuid
+guidance_reports | user_id | uuid
+guidance_reports | created_at | timestamp with time zone
+guidance_reports | scores | jsonb
+guidance_reports | recommended | text
+guidance_reports | phase | integer
+guidance_reports | roadmap | jsonb
+guidance_reports | summary | text
+hackathons | id | uuid
+hackathons | title | text
+hackathons | organizer | text
+hackathons | url | text
+hackathons | prize | text
+hackathons | mode | text
+hackathons | location | text
+hackathons | registration_deadline | date
+hackathons | event_start_date | date
+hackathons | event_end_date | date
+hackathons | tags | ARRAY
+hackathons | description | text
+hackathons | source | text
+hackathons | is_active | boolean
+hackathons | created_at | timestamp with time zone
+hackathons | updated_at | timestamp with time zone
+hr_interview_messages | id | uuid
+hr_interview_messages | session_id | uuid
+hr_interview_messages | role | text
+hr_interview_messages | content | text
+hr_interview_messages | created_at | timestamp with time zone
+hr_interview_sessions | id | uuid
+hr_interview_sessions | user_id | uuid
+hr_interview_sessions | role_target | text
+hr_interview_sessions | difficulty | text
+hr_interview_sessions | status | text
+hr_interview_sessions | feedback | jsonb
+hr_interview_sessions | score | integer
+hr_interview_sessions | started_at | timestamp with time zone
+hr_interview_sessions | ended_at | timestamp with time zone
+interest_responses | user_id | uuid
+interest_responses | answers | jsonb
+interest_responses | updated_at | timestamp with time zone
+internships | id | uuid
+internships | title | text
+internships | company | text
+internships | stipend | text
+internships | location | text
+internships | mode | text
+internships | skills | ARRAY
+internships | description | text
+internships | deadline | date
+internships | apply_url | text
+internships | source | text
+internships | verified | boolean
+internships | active | boolean
+internships | created_at | timestamp with time zone
+profiles | id | uuid
+profiles | full_name | text
+profiles | college | text
+profiles | branch | text
+profiles | year | integer
+profiles | semester | integer
+profiles | cgpa | numeric
+profiles | onboarded | boolean
+profiles | created_at | timestamp with time zone
+profiles | updated_at | timestamp with time zone
+questions | id | uuid
+questions | topic_id | uuid
+questions | subject_id | uuid
+questions | difficulty | text
+questions | prompt | text
+questions | options | jsonb
+questions | correct_idx | integer
+questions | explanation | text
+quiz_responses | id | uuid
+quiz_responses | session_id | uuid
+quiz_responses | user_id | uuid
+quiz_responses | question_id | uuid
+quiz_responses | chosen_idx | integer
+quiz_responses | is_correct | boolean
+quiz_responses | created_at | timestamp with time zone
+quiz_sessions | id | uuid
+quiz_sessions | user_id | uuid
+quiz_sessions | subject_id | uuid
+quiz_sessions | topic_id | uuid
+quiz_sessions | started_at | timestamp with time zone
+quiz_sessions | finished_at | timestamp with time zone
+quiz_sessions | score | integer
+quiz_sessions | total | integer
+resources | id | uuid
+resources | topic_id | uuid
+resources | kind | text
+resources | youtube_id | text
+resources | title | text
+resources | channel | text
+resources | language | text
+resources | duration_min | integer
+resumes | id | uuid
+resumes | user_id | uuid
+resumes | title | text
+resumes | target_role | text
+resumes | content | jsonb
+resumes | ai_summary | text
+resumes | created_at | timestamp with time zone
+resumes | updated_at | timestamp with time zone
+semesters | id | integer
+semesters | name | text
+semesters | description | text
+student_internships | user_id | uuid
+student_internships | internship_id | uuid
+student_internships | bookmarked | boolean
+student_internships | status | text
+student_internships | updated_at | timestamp with time zone
+subjects | id | uuid
+subjects | semester_id | integer
+subjects | code | text
+subjects | name | text
+subjects | description | text
+subjects | icon | text
+subjects | position | integer
+topic_progress | user_id | uuid
+topic_progress | topic_id | uuid
+topic_progress | status | text
+topic_progress | updated_at | timestamp with time zone
+topics | id | uuid
+topics | unit_id | uuid
+topics | name | text
+topics | summary | text
+topics | position | integer
+units | id | uuid
+units | subject_id | uuid
+units | name | text
+units | position | integer
+user_badges | id | uuid
+user_badges | user_id | uuid
+user_badges | badge_id | uuid
+user_badges | earned_at | timestamp with time zone
+user_skills | id | uuid
+user_skills | user_id | uuid
+user_skills | skill | text
+user_skills | proficiency | text
+user_skills | created_at | timestamp with time zone
+user_stats | user_id | uuid
+user_stats | xp | integer
+user_stats | level | integer
+user_stats | current_streak | integer
+user_stats | longest_streak | integer
+user_stats | last_active_date | date
+user_stats | created_at | timestamp with time zone
+user_stats | updated_at | timestamp with time zone
